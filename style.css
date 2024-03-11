@@ -1,0 +1,116 @@
+@import url(https://fonts.google.com/specimen/Figtree);
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(47, 88%, 63%);
+  min-height: 100vh;
+  display: grid;
+  place-content: center;
+}
+.profile-pic{
+  position: relative;
+  height: 40px;
+  width: 40px;
+}
+
+.main-img{
+  padding: 0.1rem;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.main-img img{
+  border-radius: 5px;
+}
+
+.conteiner {
+  max-width: 400px;
+  height: 500px;
+  background-color: white;
+  margin: 2rem;
+  border-radius: 1rem;
+  font-family: "Figtree", sans-serif;
+  font-style: normal;
+  border: 10px black;
+  padding: 1.5rem;
+  position: relative;
+}
+
+.conteiner::before{
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  position: absolute;
+  top: 15px;
+  right: -15px;
+  border-radius: 1rem;
+  z-index: -1;
+
+}
+
+.text{
+    font-size: 16px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    color: gray;
+    line-height: 1.5rem;
+}
+
+@media (max-width: 375px){
+  h1{
+    margin-top: 2rem;
+  }
+  .conteiner{
+    margin: 0;
+  }
+  .conteiner .recipe-image{
+    padding:0;
+    border-radius: 0;
+  }
+}
+
+.category{
+  margin-bottom: 10px;
+  font-weight: 800;
+  margin: 0 auto;
+  justify-content: center;
+  display: flex;
+}
+
+.date{
+  font-weight: 500;
+  margin-top: 1rem;
+}
+
+.conteiner h1{
+  font-weight: 800;
+  margin: 1rem;
+  font-size: 1.5rem;
+  line-height: 1;
+  text-decoration: none;
+}
+
+.category-div{
+  background-color: hsl(47, 88%, 63%);
+  border-radius: .5rem;
+  display: flex;
+  width: min-content;
+  margin-top: 1.5rem;
+}
+
+.profile{
+  font-weight: 800;
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+}
+
